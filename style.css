@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #232830;
+}
+
+main{
+    align-items: center;
+}
+
+
+#t1{
+    position: absolute;
+    font-size: 150%;
+    color: white;
+    font-family: "Recursive", serif;
+    padding: 15px 50px;
+    display: flex;
+}
+
+#t2{
+    position: absolute;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    font-family: "Recursive", serif;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    right: 0px;
+    padding: 15px 50px;
+}
+
+#t1 p{
+    margin: 0px;
+    padding: 0px;
+}
+#t2 p{
+    margin: 0px;
+    padding: 0px;
+}
+
+#t2 p a{
+    text-decoration: none;
+    color: white;
+}
+
+#t2 p a:hover{
+    color: #686666;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+ul li{
+    /* Remove the * point from the list.*/
+    list-style: none;
+}
+
+
+
+
+.a1{
+    /* Remove the underline factor from the <a> element.*/
+    text-decoration: none;
+    color: #909090;
+    font-family: "Recursive", serif;
+}
+
+.a1:hover{
+    /* Remove the underline factor from the <a> element.*/
+    text-decoration: none;
+    color: #333333;
+    font-family: "Recursive", serif;
+}
+
+.gradient{
+    font-family: "Recursive", serif;
+    color: transparent;
+    text-decoration: none;
+    background-image: linear-gradient(130deg, #909090,#232830);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.ul1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 170%;
+}
+
+.obj{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.obj img:hover{
+    width: 110%;
+
+}
+
+.container div{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    height: 439px;
+    width: 390px;
+    /* O OVERFLOW DEVE SER DEFIDO COM RELAÇÃO AO CONTAINER, NÃO NO ITEM!! */
+    overflow: hidden;
+}
+
+.container div:hover{
+    background-color: rgb(240, 215, 215);
+}
+
+
+/* Define o container (grid inteira) do meu painel */
+.container{
+    display: grid;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    grid-template-columns: repeat(3, 390px);
+}
+
+
+.container div h3{
+    position: relative;
+    font-family: "Poppins", serif;
+    margin: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.container div p{
+    font-family: "Poppins", serif;
+    margin: 0px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.img2{
+    position: absolute;
+    padding-left: 25px;
+    bottom: 20px;
+}
+
+.pagination{
+    display: flex;
+    padding: 80px;
+    padding-top: 150px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagination div a{
+    font-family: "Poppins", serif;
+    font-size: 170%;
+    color: #909090;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.pagination div a:hover{
+    color: white;
+    font-size: 200%;
+}
+
+.a2{
+    border-top: 4px solid #FF7575;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#a2{
+    color: #ff7575;
+}
+
+.pagination div{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination div a{
+    position: relative;
+    top: 5px;
+}
+
+/* Aqui começa a mexer no footer.  */
+
+footer{
+    height: 200px;
+    position: relative;
+}
+
+.footer1{
+    /* Absolute permite o elemento sair do fluxo normal de organização da página.  */
+    position: absolute;
+    display: flex;
+    font-family: "Poppins", serif;
+    color: white;
+    font-size: 125%;
+    gap: 30px;
+    justify-content: left;
+    padding: 30px 100px;
+    align-items: center;
+
+}
+
+.footer1 h3, footer1 div{
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer1 div{
+    background-color: #4699e0;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+}
+
+.footer1 div a{
+    text-decoration: none;
+    color: white
+}
+
+/* Mexer no footer2 */
+.footer2{
+    display: flex;
+    justify-content: right;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+
+.footer2 div{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #4699E0;
+    padding: 0px;
+    margin: 0px;
+    font-size: 125%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer2 div a{
+    color: white;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+
+}
+
